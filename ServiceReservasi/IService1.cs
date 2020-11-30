@@ -52,6 +52,7 @@ namespace ServiceReservasi
         [DataMember]
         public int Kuota { get; set; }
     }
+    [DataContract]
     public class Pemesanan
     {
         [DataMember]
@@ -63,6 +64,6 @@ namespace ServiceReservasi
         [DataMember]
         public int JumlahPemesanan { get; set; }
         [DataMember]
-        public int IDLokasi { get; set; }
+        public string IDLokasi { get; set; }
     }
 }
